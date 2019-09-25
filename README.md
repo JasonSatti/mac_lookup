@@ -32,6 +32,11 @@ python3 mac_lookup.py -s "XXXX"
 python3 mac_lookup.py -s "XXXXXXXXXXXX"
 ```
 
+#### Exit the virtualenv
+```
+deactive # which is usable only after you activate the env
+```
+
 ### Usage Example
 
 ```
