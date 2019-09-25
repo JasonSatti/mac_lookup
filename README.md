@@ -1,6 +1,6 @@
 # Mac Lookup
 
-mac_lookup is a Python script that is used to check the model of a MacBook based on the device's serial number..
+mac_lookup is a Python script that is used to check the model of a MacBook based on the device's serial number.
 
 
 ### Installation
