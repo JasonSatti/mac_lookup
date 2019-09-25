@@ -11,7 +11,7 @@ Set up a new virtual enviroment and install the requirements to run this script.
 ```
 pip install virtualenv [--user]
 ```
-#### Createa a new virtualenv
+#### Create a new virtualenv
 ```
 virtualenv maclookup_env
 virtualenv -p /usr/local/bin/pypy maclookup_env # using the pypy distribution
