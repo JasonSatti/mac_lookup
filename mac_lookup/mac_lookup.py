@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*
 """
 maclookup - Used to look up the model name of any MacBook via the serial
