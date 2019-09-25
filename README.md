@@ -40,7 +40,7 @@ MacBook Pro (13-inch, 2018, Four Thunderbolt 3 Ports)
 ```
 usage: mac_lookup.py [-h] -s SERIAL
 
-Get MacBook Serial Number.
+Get MacBook model via serial number lookup.
 
 optional arguments:
   -h, --help            show this help message and exit
