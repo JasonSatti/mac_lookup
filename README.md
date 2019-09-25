@@ -15,6 +15,8 @@ pip install -r requirements.txt
 
 ```python
 python3 mac_lookup.py -sn "XXXX"
+python3 mac_lookup.py -sn "XXXXXXXXXXXX"
+
 ```
 
 ### Usage Example
@@ -26,6 +28,11 @@ python3 mac_lookup.py -sn "LVDT"
 2019-09-24 17:04:35,359 [INFO] maclookup: Retrieving MacBook model.
 MacBook Pro (15-inch, 2019)
 
+python3 mac_lookup.py -sn "C02Z20D2LVDT"
+2019-09-24 17:04:35,359 [INFO] maclookup: Initializing mac_lookup.
+2019-09-24 17:04:35,359 [INFO] maclookup: Verifying serial number.
+2019-09-24 17:04:35,359 [INFO] maclookup: Retrieving MacBook model.
+MacBook Pro (15-inch, 2019)
 ```
 
 ### Testing
