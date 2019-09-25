@@ -76,7 +76,7 @@ def main():
         help="Serial Number of MacBook for model lookup.",
     )
     args = parser.parse_args()
-    log.info("Initializing mac_lookup.")
+    log.info("Initializing mac lookup.")
     log.info("Verifying serial number.")
     serial = verify_serial(args.serial)
     log.info("Retrieving MacBook model.")
