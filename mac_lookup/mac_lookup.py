@@ -61,9 +61,9 @@ def get_model(serial):
 
 def main():
     """Get the model of a MacBook based on the serial number."""
-    parser = argparse.ArgumentParser(description="Get Mac Serial Number.")
+    parser = argparse.ArgumentParser(description="Get MacBook Serial Number.")
     parser.add_argument(
-        "-sn",
+        "-s",
         "--serial",
         required=True,
         type=str,
