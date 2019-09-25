@@ -41,7 +41,7 @@ pytest
 ```
 
 ### Testing Example
-```python
+```
 ============================= test session starts ==============================
 platform darwin -- Python 3.7.4, pytest-5.1.3, py-1.8.0, pluggy-0.13.0
 rootdir:
