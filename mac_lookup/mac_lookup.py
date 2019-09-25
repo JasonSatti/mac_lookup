@@ -30,12 +30,15 @@ def verify_serial(serial):
     :param serial: Str passed in via the CLI.
     :return: Str
     """
+    if isinstance(serial, str) is False:
+        log_raise(AttributeError, "Serial number must be a string.")
     if len(serial) > 12:
         log_raise(AttributeError, "Serial number contains more than 12 characters.")
     if len(serial) < 4:
         log_raise(
             AttributeError, "Serial number must contain at least the last 4 characters."
         )
+
     last_4 = serial[-4:]
 
     return last_4
@@ -61,7 +64,9 @@ def get_model(serial):
 
 def main():
     """Get the model of a MacBook based on the serial number."""
-    parser = argparse.ArgumentParser(description="Get MacBook Serial Number.")
+    parser = argparse.ArgumentParser(
+        description="Get MacBook model via " "serial number lookup."
+    )
     parser.add_argument(
         "-s",
         "--serial",
@@ -70,11 +75,12 @@ def main():
         help="Serial Number of MacBook for model lookup.",
     )
     args = parser.parse_args()
-    log.info('Initializing mac_lookup.')
-    log.info('Verifying serial number.')
+    log.info("Initializing mac_lookup.")
+    log.info("Verifying serial number.")
     serial = verify_serial(args.serial)
-    log.info('Retrieving MacBook model.')
+    log.info("Retrieving MacBook model.")
     print(get_model(serial))
+
 
 if __name__ == "__main__":
     main()
