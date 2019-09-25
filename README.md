@@ -7,9 +7,22 @@ mac_lookup is a Python script that is used to check the model of a MacBook based
 
 Set up a new virtual enviroment and install the requirements to run this script.
 
-##### Install virtualenv
+#### Install virtualenv
 ```
 pip install virtualenv [--user]
+```
+#### Createa a new virtualenv
+```
+virtualenv maclookup_env
+virtualenv -p /usr/local/bin/pypy maclookup_env # using the pypy distribution
+```
+#### Initialize the virtualenv
+```
+source maclookup_env/bin/activate
+```
+#### Install the requirements
+```
+pip install -r requirements.txt
 ```
 
 ### Usage
@@ -17,7 +30,6 @@ pip install virtualenv [--user]
 ```python
 python3 mac_lookup.py -s "XXXX"
 python3 mac_lookup.py -s "XXXXXXXXXXXX"
-
 ```
 
 ### Usage Example
