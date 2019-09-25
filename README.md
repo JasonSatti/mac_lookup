@@ -28,11 +28,11 @@ python3 mac_lookup.py -sn "LVDT"
 2019-09-24 17:04:35,359 [INFO] maclookup: Retrieving MacBook model.
 MacBook Pro (15-inch, 2019)
 
-python3 mac_lookup.py -sn "C02Z20D2LVDT"
-2019-09-24 17:04:35,359 [INFO] maclookup: Initializing mac_lookup.
-2019-09-24 17:04:35,359 [INFO] maclookup: Verifying serial number.
-2019-09-24 17:04:35,359 [INFO] maclookup: Retrieving MacBook model.
-MacBook Pro (15-inch, 2019)
+python3 mac_lookup.py -sn "C02YF17TJHD4"
+2019-09-24 17:11:32,030 [INFO] maclookup: Initializing mac_lookup.
+2019-09-24 17:11:32,031 [INFO] maclookup: Verifying serial number.
+2019-09-24 17:11:32,031 [INFO] maclookup: Retrieving MacBook model.
+MacBook Pro (13-inch, 2018, Four Thunderbolt 3 Ports)
 ```
 
 ### Testing
