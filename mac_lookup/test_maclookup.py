@@ -108,6 +108,16 @@ def test_nullserial():
         verify_serial()
 
 
+def test_nonstringserial():
+    """Test a failed serial verification based on argument not being passed in.
+
+    :return: True
+    """
+    serial = 4
+    with pytest.raises(AttributeError, match="Serial number must be a string."):
+        verify_serial(serial)
+
+
 # No longer needed due to verify_serial()
 # @mock.patch("mac_lookup.requests.get", autospec=True)
 # def test_longserial(mock_getmodel):
