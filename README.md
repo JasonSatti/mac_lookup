@@ -35,7 +35,21 @@ python3 mac_lookup.py -s "C02YF17TJHD4"
 MacBook Pro (13-inch, 2018, Four Thunderbolt 3 Ports)
 ```
 
+### Help
+
+```
+usage: mac_lookup.py [-h] -s SERIAL
+
+Get MacBook Serial Number.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s SERIAL, --serial SERIAL
+                        Serial Number of MacBook for model lookup.
+```
+
 ### Testing
+
 ```python
 pytest
 ```
