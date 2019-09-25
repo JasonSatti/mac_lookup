@@ -3,12 +3,13 @@
 mac_lookup is a Python script that is used to check the model of a MacBook based on the device's serial number.
 
 
-### Installation
+### Setup
 
-Install the dependencies in the requirements.txt.
+Set up a new virtual enviroment and install the requirements to run this script.
 
-```bash
-pip install -r requirements.txt
+```
+#Install virtualenv
+pip install virtualenv [--user]
 ```
 
 ### Usage
