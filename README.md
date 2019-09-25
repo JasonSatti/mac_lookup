@@ -22,13 +22,13 @@ python3 mac_lookup.py -sn "XXXXXXXXXXXX"
 ### Usage Example
 
 ```
-python3 mac_lookup.py -s "LVDT"
+python3 mac_lookup.py -s "XXXX"
 2019-09-24 17:04:35,359 [INFO] maclookup: Initializing mac_lookup.
 2019-09-24 17:04:35,359 [INFO] maclookup: Verifying serial number.
 2019-09-24 17:04:35,359 [INFO] maclookup: Retrieving MacBook model.
 MacBook Pro (15-inch, 2019)
 
-python3 mac_lookup.py -s "C02YF17TJHD4"
+python3 mac_lookup.py -s "XXXXXXXXXXXX"
 2019-09-24 17:11:32,030 [INFO] maclookup: Initializing mac_lookup.
 2019-09-24 17:11:32,031 [INFO] maclookup: Verifying serial number.
 2019-09-24 17:11:32,031 [INFO] maclookup: Retrieving MacBook model.
