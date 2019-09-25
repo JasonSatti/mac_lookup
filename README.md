@@ -39,15 +39,3 @@ MacBook Pro (13-inch, 2018, Four Thunderbolt 3 Ports)
 ```python
 pytest
 ```
-
-### Testing Example
-```
-============================= test session starts ==============================
-platform darwin -- Python 3.7.4, pytest-5.1.3, py-1.8.0, pluggy-0.13.0
-rootdir:
-collected 6 items
-
-test_maclookup.py ......                                                 [100%]
-
-============================== 6 passed in 0.12s ===============================
-```
