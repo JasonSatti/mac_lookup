@@ -14,8 +14,8 @@ pip install -r requirements.txt
 ### Usage
 
 ```python
-python3 mac_lookup.py -sn "XXXX"
-python3 mac_lookup.py -sn "XXXXXXXXXXXX"
+python3 mac_lookup.py -s "XXXX"
+python3 mac_lookup.py -s "XXXXXXXXXXXX"
 
 ```
 
