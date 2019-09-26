@@ -33,8 +33,8 @@ def verify_serial(serial):
     """
     if isinstance(serial, str) is False:
         log_raise(AttributeError, "Serial number must be a string.")
-    if len(serial) > 12:
-        log_raise(AttributeError, "Serial number contains more than 12 characters.")
+    if len(serial) > 13:  # len(13) to account for dummy S from scanned codes
+        log_raise(AttributeError, "Serial number contains more than 13 characters.")
     if len(serial) < 4:
         log_raise(
             AttributeError, "Serial number must contain at least the last 4 characters."
