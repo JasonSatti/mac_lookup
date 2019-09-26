@@ -44,6 +44,15 @@ def test_getmodel(mock_getmodel):
     serial = "C02Z20D2LVDT"
     assert (get_model(serial)) == "MacBook Pro (15-inch, 2019)"
 
+@mock.patch("mac_lookup.requests.get", autospec=True)
+def test_getscannedmodel(mock_getmodel):
+    """Test a successful called based on a live accurate MacBook serial number.
+
+    :return: True
+    """
+    mock_getmodel.return_value = get_successfulcall()
+    serial = "SC02Z20D2LVDT"
+    assert (get_model(serial)) == "MacBook Pro (15-inch, 2019)"
 
 @mock.patch("mac_lookup.requests.get", autospec=True)
 def test_wrongserial(mock_getmodel):
@@ -63,9 +72,9 @@ def test_longserial():
 
     :return: True
     """
-    serial = "C02LR3KJRNRTI"
+    serial = "C02LR3KJRNRTIS"
     with pytest.raises(
-        AttributeError, match="Serial number contains more than 12 characters."
+        AttributeError, match="Serial number contains more than 13 characters."
     ):
         verify_serial(serial)
 
