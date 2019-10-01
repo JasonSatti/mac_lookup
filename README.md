@@ -12,12 +12,12 @@ pip install virtualenv [--user]
 ```
 #### Create a new virtualenv
 ```
-virtualenv maclookup_env
-virtualenv -p /usr/local/bin/pypy maclookup_env # using the pypy distribution
+virtualenv maclookup_venv
+virtualenv -p /usr/local/bin/pypy maclookup_venv # using the pypy distribution
 ```
 #### Initialize the virtualenv
 ```
-source maclookup_env/bin/activate
+source maclookup_venv/bin/activate
 ```
 #### Install the requirements
 ```
